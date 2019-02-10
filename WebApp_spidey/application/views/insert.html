@@ -1,0 +1,41 @@
+<h1>Ingresar a Spider-Lista</h1>
+
+<form method="POST">
+  <div class="form-group row">
+    <label for="nombre" class="col-sm-2">Nombre</label>
+    <div class="col-sm-2">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-control">
+    </div>
+  </div>
+    <div class="form-group row">
+      <label for="identidad" class="col-sm-2">Identidad</label>
+        <input type="text" id="identidad" name="identidad" placeholder="Identidad" class="form-control col-sm-2">
+    </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <label for="genero" class="col-form label col-sm-2">Clase</label>
+        <div class="form-check col-sm-10">
+          <input type="radio" id="Femenino" name="genero" value="Femenino" class="form-check-input">Femenino<br>
+          <input type="radio" id="Masculino" name="genero" value="Masculino" class="form-check-input"checked>Masculino<br>
+          <input type="radio" id="Animal" name="genero" value="Animal" class="form-check-input">Animal<br>
+          <input type="radio" id="Traje" name="genero" value="Traje alternativo" class="form-check-input">Traje Alternativo
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <label for="universo" class="col-sm-2">Universo</label>
+      <input type="text" id="universo" name="universo" placeholder="Universo" class="form-control col-sm-2">
+    </div>
+    <div class="form-group row">
+      <label for="aparicion" class="col-sm-2">Primer aparicion</label>
+      <input type="text" id="aparicion" name="aparicion" placeholder="Primer aparicion" class="form-control col-sm-5">
+    </div>
+    <div class="form-group row">
+      <label for="colores" class="col-sm-2">Traje</label>
+      <input type="text" id="colores" name="colores" placeholder="Colores de traje y detalles" class="form-control col-sm-5">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-danger">Agregar Aracnido</button>
+</form>
+<br>
+<a href="/"><button type="button" name="button" class="btn btn-primary">Cancelar Ingreso</button></a>

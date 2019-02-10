@@ -1,0 +1,41 @@
+$def with(datos)
+<a href="/"></a><h1>Actualizar datos del Aracnido</h1>
+
+<form method="POST">
+  <div class="form-inline form-group">
+      <label for="id_spidey">Id</label>
+      <input type="text" readonly="true" name="id" id="id" value="$datos.id_spidey" class="form-control mx-sm-3 col-sm-1">
+      <label for="nombre">Nombre</label>
+      <input type="text" value="$datos.nombre" id="nombre" name="nombre" class="col-md-5 mx-sm-3">
+  </div>
+  <div class="form-inline form-group">
+    <label for="identidad">Identidad</label>
+    <input type="text" value="$datos.identidad" id="identidad" name="identidad" class="col-sm-2 mx-sm-3">
+  </div>
+  <div class="form-inline form-group">
+    <label for="genero">Clase</label>
+    <input type="text" name="genero" readonly="true" value="$datos.genero" class="col-sm-2 mx-sm-5 form-control">
+  </div>
+    <input type="radio" id="Femenino" name="genero" value="Femenino">Femenino
+    <br>
+    <input type="radio" id="Masculino" name="genero" value="Masculino">Masculino
+    <br>
+    <input type="radio" id="Animal" name="genero" value="Animal">Animal
+    <br>
+    <input type="radio" id="Traje" name="genero" value="Traje alternativo">Traje Alternativo
+    <br><br>
+    <div class="form-inline form-group">
+      <label for="universo">Universo</label>
+      <input type="text" value="$datos.universo" id="universo" name="universo" class="col-md-3 mx-sm-4">
+    </div>
+    <div class="form-inline form-group">
+    <label for="aparicion">Primer aparicion</label>
+    <input type="text" value="$datos.aparicion" id="aparicion" name="aparicion" class="col-md-7 mx-sm-3">
+    </div>
+    <div class="form-inline form-group">
+      <label for="colores">Traje</label>
+      <input type="text" value="$datos.colores" id="colores" name="colores" class="col-md-7 mx-sm-5">
+    </div>
+    <button type="submit" class="btn btn-danger">Agregar Aracnido</button>
+</form><br>
+<a href="/"><button type="button" name="button" class="btn btn-outline-primary">Cancelar Cambios</button></a>

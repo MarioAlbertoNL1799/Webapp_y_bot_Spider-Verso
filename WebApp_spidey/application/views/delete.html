@@ -1,0 +1,37 @@
+$def with(datos)
+<h1>Eliminar Aracnido</h1>
+
+
+<form method="POST">
+  <div class="form-group row">
+    <label for="id_spidey" class="col-sm-2 col-form-label">Id</label>
+    <input type="text" readonly="true" value="$datos.id_spidey" id="id_spidey" name="id_spidey" class="col-sm-1 form-control">
+  </div>
+  <div class="form-group row">
+    <label for="nombre" class="col-sm-2">Nombre</label>
+    <input type="text" readonly="true" value="$datos.nombre" id="nombre" name="nombre" class="col-sm-3 form-control">
+  </div>
+  <div class="form-group row">
+    <label for="identidad" class="col-sm-2">Identidad</label>
+    <input type="text" readonly="true" name="identidad" value="$datos.identidad" id="identidad" class="col-sm-3 form-control">
+  </div>
+  <div class="form-group row">
+    <label for="genero" class="col-sm-2">Tipo</label>
+    <input type="text" readonly="true" value="$datos.genero" id="genero" name="genero" class="col-sm-2 form-control">
+  </div>
+  <div class="form-group row">
+    <label for="universo" class="col-sm-2">Universo</label>
+    <input type="text" readonly="true" value="$datos.universo" id="universo" name="universo" class="col-sm-2 form-control">
+  </div>
+  <div class="form-group row">
+    <label for="aparicion" class="col-sm-2">Primer Aparicion</label>
+    <input type="text" readonly="true" name="aparicion" value="$datos.aparicion" id="aparicion" class="col-sm-7 form-control">
+  </div>
+  <div class="form-group row">
+    <label for="colores" class="col-sm-2">Traje</label>
+    <input type="text" readonly="true" name="colores" value="$datos.colores" id="colores" class="col-sm-7 form-control">
+  </div>
+  <button type="submit" class="btn btn-danger">Eliminar Aracnido</button>
+</form>
+<br>
+<a href="/"><button type="button" name="button" class="btn btn-outline-success">Regresar</button></a>

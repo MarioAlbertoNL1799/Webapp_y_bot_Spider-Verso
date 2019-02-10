@@ -1,0 +1,26 @@
+$def with(datos)
+<h1><center>Spider-Verso</center></h1>
+<a href="/insert"><button type="button" class="btn btn-danger btn-lg">Agregar aracnido</button></a>
+<br><br>
+<table class="table">
+  <thead class="thead-dark">
+    <th scope="col">Id</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Clase</th>
+    <th scope="col">Universo</th>
+    <th scope="col">Visualizar</th>
+    <th scope="col">Actualizar</th>
+    <th scope="col">Eliminar</th>
+  </thead>
+$for row in datos:
+    <tr>
+        <th scope="row">$row.id_spidey</th>
+        <td>$row.nombre</td>
+        <td>$row.genero</td>
+        <td>$row.universo</td>
+        <td><a href="/view/$row.id_spidey">Mas</a></td>
+        <td><a href="/update/$row.id_spidey">Actualizar</a></td>
+        <td><a href="/delete/$row.id_spidey">Borrar</a></td>
+    </tr>
+</table>
+<br>
